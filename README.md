@@ -6,10 +6,10 @@ Composed of the original training data and processed data. Data was gathered fro
 
 It also contains the notebook for explanatory data analysis, data preprocessing, and model training. It also contains two saved models.
 
-## Backend folder
+## `Backend` folder
 
 It contains an API server that utilizes the ML model to match the users. It also has a structure of database for storing the matching and user profiles.
 
-## Frontend folder
+## `Frontend` folder
 
 The front end project is a Flutter App that provides all platform apps. The front end app connects with the backend API server to provide the matching functionality. The user interface was designed for simplicity and ease of use. The logic was different from any current dating app.
