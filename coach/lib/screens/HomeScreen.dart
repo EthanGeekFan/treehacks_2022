@@ -29,12 +29,13 @@ class _HomeScreenState extends State<HomeScreen> {
   String description = "Please check expiry date at the same time";
   String time = "6:00pm Feb 29";
   String place = "Wilbur Dining Hall";
+  String code = "Everything happens for a reason";
   bool checkedExpiry = false;
   Color expiredColor = Colors.redAccent;
   late Timer expiryTimer;
   late DateTime expiryDate;
 
-  Duration defaultDuration = Duration(seconds: 5);
+  Duration defaultDuration = Duration(hours: 5);
 
   void setWaiting() {
     status = Status.waiting;
@@ -363,8 +364,29 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ],
                                 ),
                                 SizedBox(
-                                  height:
-                                      MediaQuery.of(context).size.height * 0.07,
+                                  height: 30,
+                                ),
+                                Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  height: 60,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Colors.grey.withOpacity(0.3),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "\"$code\"",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontStyle: FontStyle.italic,
+                                        color: Colors.white.withOpacity(0.6),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 40,
                                 ),
                                 ElevatedButton(
                                   style: ButtonStyle(
@@ -496,8 +518,29 @@ class _HomeScreenState extends State<HomeScreen> {
                                   ],
                                 ),
                                 SizedBox(
-                                  height:
-                                      MediaQuery.of(context).size.height * 0.07,
+                                  height: 30,
+                                ),
+                                Container(
+                                  width: MediaQuery.of(context).size.width,
+                                  height: 60,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Colors.grey.withOpacity(0.3),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "\"$code\"",
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(
+                                        fontSize: 20,
+                                        fontStyle: FontStyle.italic,
+                                        color: Colors.white.withOpacity(0.6),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 40,
                                 ),
                                 Text(
                                   description,
