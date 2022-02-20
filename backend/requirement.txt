@@ -1,0 +1,7 @@
+sklearn
+FastAPI
+pydantic
+typing
+joblib
+requests
+pandas
